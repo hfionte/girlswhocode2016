@@ -1,11 +1,12 @@
 #hi{
       background:rgb(0,255,0);
-      width:50;
-      border:10 double rgb(41,182,246);
     }
 h1{
       background:rgb(41,182,246);
-      border:10 double rgb(0,255,0);
+}
+#main{
+      width:1000px;
+      margin:0 auto;
 }
 
 
