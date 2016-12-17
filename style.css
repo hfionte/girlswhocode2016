@@ -9,10 +9,14 @@ h1{
       margin:0 auto;
 }
 body{
-      background:rgb(magenta);
+      background:rgb(10,10,10);
+      color:white;
 }
 .picture{
-      margin:auto
-      width:500px;
+      margin:auto;
+      width:500px;}
+#nav li{
+  list-style-type:none;
+    display: inline;
+    margin: 80px;
 }
-    
