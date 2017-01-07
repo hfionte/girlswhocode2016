@@ -2,16 +2,16 @@
       background:rgb(0,255,0);
     }
 h1{
-      background:rgb(41,182,246);
-      font-family: Nunito;
-      color: rgb(0,0,0);
+      background: #C75696;
+      font-family: Amatic SC;
+      color: #F3F6F6;
 }
 #main{
       width:1000px;
       margin:0 auto;
 }
 body{
-      background:rgb(10,10,10);
+      background: #512E67;
       color:white;
 }
 .picture{
