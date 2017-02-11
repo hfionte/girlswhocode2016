@@ -1,0 +1,153 @@
+
+body{
+  background-color: rgb(245, 255, 230);
+}
+
+
+*{
+  font-family:"raleway", sans-serif;
+}
+h1{
+  font-family:"raleway", sans-serif;
+  text-align:center;
+  background-color: rgb(181,232,223);
+  border: rgb(181,232,223) 5px outset;
+}
+#main{
+  max-width:1000px;
+  margin:auto;
+}
+
+#nav{
+  background:rgb(181,232,223);
+
+  border: rgb(181,232,223) 5px outset;
+}
+
+#body{
+  background: #004d99;
+  background-color: aqua;
+}
+
+#lit{
+  color:white;
+  text-align:center;
+}
+
+.picture{
+  width:450px;
+  height: 450px;
+  text-align:center;
+}
+
+
+#nav ul{
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+  z-index:999;
+}
+
+#nav li{
+  padding:20px;
+  list-style-type:none;
+  color:#000000;
+  margin: middle;
+
+  
+  font-family:'Raleway', sans-serif;
+}
+  
+#nav ul ul{
+  display:none;
+  border: aqua 5px groove;
+}
+
+#nav ul li:hover ul{
+  display:block; 
+  position:absolute;
+  background-color:aqua;  /*If you want to change back....#abaeb2*/
+  font-family: 'Raleway', sans-serif;
+}
+
+#nav li li{
+  padding:5px;
+}
+
+
+.home {
+  text-decoration:none;
+  color:black;
+}
+
+.home:hover{
+  color:white;
+}
+
+.about {
+  text-decoration:none;
+  color:black;
+}
+
+.about:hover{
+  color:white;
+}
+
+.people {
+  width:700px;
+  margin:auto;
+  text-align:center;
+}
+
+.name {
+  text-align:center;
+}
+
+.sarah {
+  background-color:#ffce00;
+  border:5px double black;
+}
+
+.katie {
+  background-color:#66ff66;
+  border:5px double black;
+}
+
+.janie {
+  background-color:#cc00cc;
+  border:5px double black;
+}
+
+.jocelyn {
+  background-color:#0099cc;
+  border:5px double black;
+}
+
+.rishika {
+  background-color:#ff5050;
+  border:5px double black;
+}
+
+.allison {
+  background-color:#cc00ff;
+  border:5px double black;
+}
+
+.jolene {
+  background-color:turquoise;
+  border:5px double black;
+}
+
+.despina {
+  background-color:orchid;
+  border:5px double black;
+}
+
+.zephyr{
+  background-color: #8B008B;
+  border:5px double black;
+}
+/*http://www.w3schools.com/colors/colors_picker.asp?colorhex=40E0D0*/
+/*this is a website where you can choose any color you want and change it's shade and it will give you the color in rbg*/
