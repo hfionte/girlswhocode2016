@@ -3,7 +3,7 @@
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
 
-  "name": "my-gomix-app",
+  "name": "Girls Who Code",
   "version": "0.0.1",
   "description": "What am I about?",
   "main": "server.js",
