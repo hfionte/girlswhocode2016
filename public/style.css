@@ -1,6 +1,6 @@
 
 body{
-  background-color: rgb(245, 255, 230);
+  background-color: #fffaf0;
 }
 
 
@@ -13,6 +13,17 @@ h1{
   background-color: rgb(181,232,223);
   border: rgb(181,232,223) 5px outset;
 }
+
+.map img {
+  border: 3px solid #fff;
+  transition: transform 500ms;
+}
+
+.map img:hover {
+  transform:scale(2);
+  z-index:999;
+}
+
 #main{
   max-width:1000px;
   margin:auto;
@@ -34,9 +45,17 @@ h1{
   text-align:center;
 }
 
-.picture{
+.pictures{
+  margin: auto;
   width:450px;
-  height: 450px;
+  height:450px;
+  max-width:100%;
+}
+
+.picture{
+  display:block;
+  margin: auto;
+  width:100%;
   text-align:center;
 }
 
@@ -62,13 +81,13 @@ h1{
   
 #nav ul ul{
   display:none;
-  border: aqua 5px groove;
+  border: rgb(181,232,223) 5px groove;
 }
 
 #nav ul li:hover ul{
   display:block; 
   position:absolute;
-  background-color:aqua;  /*If you want to change back....#abaeb2*/
+  background-color:rgb(181,232,223);  /*If you want to change back....#abaeb2*/
   font-family: 'Raleway', sans-serif;
 }
 
@@ -125,6 +144,11 @@ h1{
   border:5px double black;
 }
 
+.rebecca {
+  background-color:aqua;
+  border:5px double black;
+}
+
 .rishika {
   background-color:#ff5050;
   border:5px double black;
@@ -141,12 +165,17 @@ h1{
 }
 
 .despina {
-  background-color:orchid;
+  background-color:#E8ADAA;
   border:5px double black;
 }
 
 .zephyr{
   background-color: #8B008B;
+  border:5px double black;
+}
+
+.arpi{
+  background-color: indigo;
   border:5px double black;
 }
 /*http://www.w3schools.com/colors/colors_picker.asp?colorhex=40E0D0*/
