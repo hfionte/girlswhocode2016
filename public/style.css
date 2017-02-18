@@ -29,9 +29,12 @@ h1{
   margin:auto;
 }
 
+.ugh{
+  color: #fffafo;
+}
+
 #nav{
   background:rgb(181,232,223);
-
   border: rgb(181,232,223) 5px outset;
 }
 
@@ -57,6 +60,7 @@ h1{
   margin: auto;
   width:100%;
   text-align:center;
+  padding-top:20px;
 }
 
 

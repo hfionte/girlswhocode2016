@@ -27,5 +27,3 @@ On the front-end,
 Made by Fog Creek
 -----------------
 
-\( ゜o゜)ノ
-(@____@)
