@@ -29,10 +29,6 @@ h1{
   margin:auto;
 }
 
-.ugh{
-  color: #fffafo;
-}
-
 #nav{
   background:rgb(181,232,223);
   border: rgb(181,232,223) 5px outset;
@@ -62,6 +58,8 @@ h1{
   text-align:center;
   padding-top:20px;
 }
+
+
 
 
 #nav ul{
@@ -184,3 +182,7 @@ h1{
 }
 /*http://www.w3schools.com/colors/colors_picker.asp?colorhex=40E0D0*/
 /*this is a website where you can choose any color you want and change it's shade and it will give you the color in rbg*/
+
+.mexican-wolf {
+  text-align:center;
+}
