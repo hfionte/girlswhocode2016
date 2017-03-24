@@ -3,6 +3,7 @@ $(function(){
   $('.pictures').cycle({fx:'fade'});
   
 });
+
 // run by the browser each time your view template is loaded
 
 // by default, you've got jQuery,
