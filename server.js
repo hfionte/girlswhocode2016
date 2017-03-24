@@ -16,6 +16,14 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
+app.get("/logo", function (request, response) {
+  response.sendFile(__dirname + '/views/logo.html');
+});
+
+app.get("/navigation", function (request, response) {
+  response.sendFile(__dirname + '/views/navigation.html');
+});
+
 app.get("/map", function (request, response) {
   response.sendFile(__dirname + '/views/map.html');
 });
@@ -34,6 +42,10 @@ app.get("/template-top", function (request, response) {
 
 app.get("/mexican-wolf", function (request, response) {
   response.sendFile(__dirname + '/views/mexican-wolf.html');  
+});
+
+app.get("/mountain-zebra", function (request, response) {
+  response.sendFile(__dirname + '/views/mountain-zebra.html');  
 });
 
 app.get("/bengal-tiger", function (request, response) {
@@ -63,6 +75,63 @@ app.get("/red-panda", function (request, response) {
 app.get("/nerpa-seal", function (request, response) {
   response.sendFile(__dirname + '/views/nerpa-seal.html'); 
 });
+
+app.get("/african-elephant", function (request, response) {
+  response.sendFile(__dirname + '/views/african-elephant.html'); 
+});
+
+app.get("/antelope", function (request, response) {
+  response.sendFile(__dirname + '/views/antelope.html'); 
+});
+
+app.get("/black-faced-lion-tamarin", function (request, response) {
+  response.sendFile(__dirname + '/views/black-faced-lion-tamarin.html'); 
+});
+
+app.get("/european-bison", function (request, response) {
+  response.sendFile(__dirname + '/views/european-bison.html'); 
+});
+
+app.get("/kemp-ridley-turtle", function (request, response) {
+  response.sendFile(__dirname + '/views/kemp-ridley-turtle.html'); 
+});
+
+app.get("/south-china-tiger", function (request, response) {
+  response.sendFile(__dirname + '/views/south-china-tiger.html'); 
+});
+
+app.get("/sumatran-rhino", function (request, response) {
+  response.sendFile(__dirname + '/views/sumatran-rhino.html'); 
+});
+
+app.get("/penguingame", function (request, response) {
+  response.sendFile(__dirname + '/views/penguingame.html'); 
+});
+
+app.get("/churchill-polar-bear", function (request, response) {
+  response.sendFile(__dirname + '/views/churchill-polar-bear.html'); 
+});
+
+app.get("/dugong", function (request, response) {
+  response.sendFile(__dirname + '/views/dugong.html'); 
+});
+
+app.get("/margay", function (request, response) {
+  response.sendFile(__dirname + '/views/margay.html'); 
+});
+
+app.get("/yellow-tailed-wooly-monkey", function (request, response) {
+  response.sendFile(__dirname + '/views/yellow-tailed-wooly-monkey.html'); 
+});
+
+app.get("/sea-eagle", function (request, response) {
+  response.sendFile(__dirname + '/views/sea-eagle.html'); 
+});
+
+app.get("/addax", function (request, response) {
+  response.sendFile(__dirname + '/views/addax.html'); 
+});
+
 // app.get("/dreams", function (request, response) {
 //   response.send(dreams);
 // });
