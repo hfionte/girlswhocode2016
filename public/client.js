@@ -4,6 +4,13 @@ $(function(){
   
 });
 
+// $.ajax({
+//   url: '/navigation',
+//   success: function(data) {
+//     $('#nav').html(data);
+//   }
+// });
+
 // run by the browser each time your view template is loaded
 
 // by default, you've got jQuery,

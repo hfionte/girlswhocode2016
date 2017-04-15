@@ -128,8 +128,16 @@ app.get("/sea-eagle", function (request, response) {
   response.sendFile(__dirname + '/views/sea-eagle.html'); 
 });
 
+app.get("/Helpful-Websites", function (request, response) {
+  response.sendFile(__dirname + '/views/helpful-websites.html'); 
+});
+
 app.get("/addax", function (request, response) {
   response.sendFile(__dirname + '/views/addax.html'); 
+});
+
+app.get("/how-to-help", function (request, response) {
+  response.sendFile(__dirname + '/views/how-to-help.html');
 });
 
 // app.get("/dreams", function (request, response) {

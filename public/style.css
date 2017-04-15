@@ -30,6 +30,10 @@ h1{
   z-index:999;
 }
 
+.bubbles_map:hover {
+  color:white
+}
+
 #main{
   max-width:1000px;
   margin:auto;
