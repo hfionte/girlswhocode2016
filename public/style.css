@@ -41,7 +41,7 @@ h1{
 
 #nav{
   background:rgb(181,232,223);
-  border: rgb(181,232,223) 5px outset;
+  border: rgb(181,232,223) 3px outset;
 }
 
 #body{
@@ -108,23 +108,7 @@ h1{
 }
 
 
-.home {
-  text-decoration:none;
-  color:black;
-}
 
-.home:hover{
-  color:white;
-}
-
-.about {
-  text-decoration:none;
-  color:black;
-}
-
-.about:hover{
-  color:white;
-}
 
 .people {
   width:700px;
@@ -199,4 +183,13 @@ h1{
 
 .mexican-wolf {
   text-align:center;
+}
+
+#nav a {
+  text-decoration:none;
+  color:black;
+}
+
+#nav a:hover {
+  color:white
 }
