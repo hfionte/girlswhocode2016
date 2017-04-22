@@ -136,8 +136,16 @@ app.get("/addax", function (request, response) {
   response.sendFile(__dirname + '/views/addax.html'); 
 });
 
+app.get("/amsterdam-albatross", function (request, response) {
+  response.sendFile(__dirname + '/views/amsterdam-albatross.html'); 
+});
+
 app.get("/how-to-help", function (request, response) {
   response.sendFile(__dirname + '/views/how-to-help.html');
+});
+
+app.get("/external-navigation", function (request, response) {
+  response.sendFile(__dirname + '/views/external-navigation.html');
 });
 
 // app.get("/dreams", function (request, response) {

@@ -4,6 +4,19 @@ $(function(){
   
 });
 
+$.ajax("/external-navigation", {
+  success:function(data){
+    console.log($('#nav'));
+    $('#nav').html(data);
+  },
+  error: function() {
+    console.log('it did not work');
+  }
+});
+
+
+//according to all known laws of aviation this movie is irrelevant
+
 // $.ajax({
 //   url: '/navigation',
 //   success: function(data) {
