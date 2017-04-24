@@ -1,6 +1,6 @@
 
 body{
-  background-color: #fffaf0;
+  background-color: white;
 }
 
 
@@ -192,4 +192,26 @@ h1{
 
 #nav a:hover {
   color:white
+}
+
+
+.bakedcorn{
+  text-decoration:none;
+  color:white
+}
+
+.bakedcorn:hover{
+  color:orange;
+  font-size:30;
+}
+
+.puns{
+  text-decoration:none;
+  font-size:10;
+  color:black;
+}
+
+.puns:hover{
+  color:orange;
+    font-size:20;
 }
