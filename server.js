@@ -76,8 +76,13 @@ app.get("/nerpa-seal", function (request, response) {
   response.sendFile(__dirname + '/views/nerpa-seal.html'); 
 });
 
+
 app.get("/african-elephant", function (request, response) {
   response.sendFile(__dirname + '/views/african-elephant.html'); 
+});
+
+app.get("/african-wild-dog", function (request, response) {
+  response.sendFile(__dirname + '/views/african-wild-dog.html')
 });
 
 app.get("/antelope", function (request, response) {
@@ -86,6 +91,10 @@ app.get("/antelope", function (request, response) {
 
 app.get("/black-faced-lion-tamarin", function (request, response) {
   response.sendFile(__dirname + '/views/black-faced-lion-tamarin.html'); 
+});
+
+app.get("/amur-leopard", function (request, response) {
+  response.sendFile(__dirname + '/views/amur-leopard.html');
 });
 
 app.get("/european-bison", function (request, response) {
@@ -102,6 +111,10 @@ app.get("/south-china-tiger", function (request, response) {
 
 app.get("/sumatran-rhino", function (request, response) {
   response.sendFile(__dirname + '/views/sumatran-rhino.html'); 
+});
+
+app.get("/tasmanian-devil", function (request, response) {
+  response.sendFile(__dirname + '/views/tasmanian-devil.html');
 });
 
 app.get("/penguingame", function (request, response) {
