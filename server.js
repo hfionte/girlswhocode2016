@@ -20,6 +20,10 @@ app.get("/logo", function (request, response) {
   response.sendFile(__dirname + '/views/logo.html');
 });
 
+app.get("/lemur", function (request, response){
+  response.sendFile(__dirname + '/views/lemur.html');
+});
+
 app.get("/navigation", function (request, response) {
   response.sendFile(__dirname + '/views/navigation.html');
 });
@@ -72,6 +76,10 @@ app.get("/red-panda", function (request, response) {
   response.sendFile(__dirname + '/views/red-panda.html'); 
 });
 
+app.get("/salamander", function (request, response){
+  response.sendFile(__dirname + '/views/salamander.html');
+});
+
 app.get("/nerpa-seal", function (request, response) {
   response.sendFile(__dirname + '/views/nerpa-seal.html'); 
 });
@@ -101,6 +109,10 @@ app.get("/european-bison", function (request, response) {
   response.sendFile(__dirname + '/views/european-bison.html'); 
 });
 
+app.get("/giant-panda", function (request, response) {
+  response.sendFile(__dirname + '/views/giant-panda.html');
+});
+
 app.get("/kemp-ridley-turtle", function (request, response) {
   response.sendFile(__dirname + '/views/kemp-ridley-turtle.html'); 
 });
@@ -111,6 +123,10 @@ app.get("/south-china-tiger", function (request, response) {
 
 app.get("/sumatran-rhino", function (request, response) {
   response.sendFile(__dirname + '/views/sumatran-rhino.html'); 
+});
+
+app.get("/tapir", function (request, response){
+  response.sendFile(__dirname + '/views/tapir.html');
 });
 
 app.get("/tasmanian-devil", function (request, response) {
@@ -179,6 +195,7 @@ app.get("/external-navigation", function (request, response) {
 // ];
 
 // listen for requests :)
+// ;3
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
