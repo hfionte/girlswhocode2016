@@ -24,6 +24,11 @@ app.get("/lemur", function (request, response){
   response.sendFile(__dirname + '/views/lemur.html');
 });
 
+app.get("/little-red-riding-hood", function (request, response){
+  response.sendFile(__dirname + '/views/little-red-riding-hood.html');
+});
+
+
 app.get("/navigation", function (request, response) {
   response.sendFile(__dirname + '/views/navigation.html');
 });
@@ -131,6 +136,10 @@ app.get("/tapir", function (request, response){
 
 app.get("/tasmanian-devil", function (request, response) {
   response.sendFile(__dirname + '/views/tasmanian-devil.html');
+});
+
+app.get("/animal-quiz", function (request, response) {
+  response.sendFile(__dirname + '/views/animal-quiz.html');
 });
 
 app.get("/penguingame", function (request, response) {
