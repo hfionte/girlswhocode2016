@@ -157,6 +157,10 @@ app.get("/sea-eagle", function (request, response) {
   response.sendFile(__dirname + '/views/sea-eagle.html'); 
 });
 
+app.get("/sea-otter", function (request, response) {
+  response.sendFile(__dirname + '/views/sea-otter.html');
+});
+
 app.get("/Helpful-Websites", function (request, response) {
   response.sendFile(__dirname + '/views/helpful-websites.html'); 
 });
