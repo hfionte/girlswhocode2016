@@ -1,0 +1,42 @@
+sprite = codesters.Sprite("person1")
+sprite.say("What animal are you most like?")
+stage.wait(2)
+sprite.say("Please answer a, b, c, or d")
+stage.wait(2)
+
+ques_1 = "what food do you like to eat the most? A) Salads B) Steak C) Apples D) Pizza"
+ques_2 = "How would you friends describe you? A) Quiet B) Loud  C) Outgoing D) Weird"
+ques_3 = "Do you own a pet? A) I don't B) I do C) I don't but I would like one D) I don't but I would not like one"
+ques_4 = "How do you spend your freetime? A) Reading B) Hanging out with friends C) Running or exercising D) Sleeping"
+ques_5 = "When dp you go to sleep? A)7-8 pm B)8-9 pm C) 9-10 pm D) 10-11 pm"
+
+quiz = [ques_1, ques_2, ques_3, ques_4, ques_5]
+user_choices = []
+
+for question in quiz:
+    choice = sprite.ask(question)
+    stage.wait(2)
+    user_choices.append(choice)
+
+a_num = user_choices.count("a")
+b_num = user_choices.count("b")
+c_num = user_choices.count("c")
+d_num = user_choices.count("d")
+
+counts = [a_num, b_num, c_num, d_num]
+result = max(counts)
+
+if result == a_num:
+    sprite.say("you're a rabbit! Gnarly!")
+
+if result == b_num:
+    sprite.say("you're a dog! cool!")
+
+if result == c_num:
+    sprite.say("You're a horse! sweet!")
+
+if result == d_num:
+    sprite.say("you're a cat! rad")
+
+
+
