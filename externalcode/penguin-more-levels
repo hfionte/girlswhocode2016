@@ -1,0 +1,253 @@
+stage.set_background("winter")
+penguin = codesters.Sprite("penguin", -196, -112)
+penguin.set_size(0.75)
+fish = codesters.Sprite("fish", 140, -152)
+fish.set_size(0.5)
+garbage = codesters.Sprite("garbage", -30,-152)
+garbage.set_size(1.45)
+snowflake1 = codesters.Sprite("snowflake1", -145, 130)
+snowflake2 = codesters.Sprite("snowflake2", -50, 150)
+snowflake3 = codesters.Sprite("snowflake3", 50, 130)
+def left_key():
+    penguin.move_left(20)
+    # add other actions...
+    
+stage.event_key("left", left_key)
+def right_key():
+    penguin.move_right(20)
+    # add other actions...
+    
+stage.event_key("right", right_key)
+def up_key():
+    penguin.move_up(20)
+    # add other actions...
+    
+stage.event_key("up", up_key)
+def down_key():
+    penguin.move_down(20)
+    # add other actions...
+
+stage.event_key("down", down_key)
+def collision(garbage, penguin):
+    penguin.go_to(-196, -112)
+    # sprite = codesters.Text("text", x, y, "color")
+    text = codesters.Text("START OVER", -176, -20, "black")
+    stage.wait(0.5)
+    stage.remove_sprite(text)
+    # add any other actions...
+    
+garbage.event_collision(collision)
+def collision(snowfalake1, penguin):
+    penguin.go_to(-196, -112)
+    # sprite = codesters.Text("text", x, y, "color")
+    text = codesters.Text("START OVER", -176, -20, "black")
+    stage.wait(0.5)
+    stage.remove_sprite(text)
+    # add any other actions...
+snowflake1.event_collision(collision)
+def collision(snowfalake2, penguin):
+    penguin.go_to(-196, -112)
+    # sprite = codesters.Text("text", x, y, "color")
+    text = codesters.Text("START OVER", -176, -20, "black")
+    stage.wait(0.5)
+    stage.remove_sprite(text)
+    # add any other actions...
+snowflake2.event_collision(collision)
+def collision(snowfalake3, penguin):
+    penguin.go_to(-196, -112)
+    # sprite = codesters.Text("text", x, y, "color")
+    text = codesters.Text("START OVER", -176, -20, "black")
+    stage.wait(0.5)
+    stage.remove_sprite(text)
+    # add any other actions...
+    
+snowflake3.event_collision(collision)
+def collision(fish, penguin):
+    fish.hide()
+    penguin.say("Yay fish!")
+    # sprite = codesters.Text("text", x, y, "color")
+    text2 = codesters.Text("LEVEL COMPLETE", 10, 100, "black")
+    text2.set_size(1.75)
+    stage.wait(2)
+    stage.set_background("castle")
+    penguin.hide()
+    garbage.hide()
+    snowflake1.hide()
+    snowflake2.hide()
+    snowflake3.hide()
+    text2.hide()
+    fish = codesters.Sprite("fish", 140, -152)
+    fish.set_size(0.5)
+    guard = codesters.Sprite("knight2", -30, -142)
+    penguin2 = codesters.Sprite("penguin", -196, -112)
+    penguin2.set_size(0.75)
+    guard.set_size(0.90)
+    dragon = codesters.Sprite("dragon", -30, 196)
+    dragon.set_size(0.70)
+    def left_key():
+        penguin2.move_left(20)
+        # add other actions...
+        
+    stage.event_key("left", left_key)
+    def right_key():
+        penguin2.move_right(20)
+        # add other actions...
+        
+    stage.event_key("right", right_key)
+    def up_key():
+        penguin2.move_up(20)
+        # add other actions...
+        
+    stage.event_key("up", up_key)
+    def down_key():
+        penguin2.move_down(20)
+        # add other actions...
+        
+    stage.event_key("down", down_key)
+    def collision(guard, penguin2):
+        penguin2.go_to(-196, -112)
+        # sprite = codesters.Text("text", x, y, "color")
+        text = codesters.Text("START OVER", -176, -20, "black")
+        stage.wait(0.5)
+        stage.remove_sprite(text)
+        # add any other actions...
+        
+    guard.event_collision(collision)
+    def collision(dragon, penguin2):
+        penguin2.go_to(-196, -112)
+        # sprite = codesters.Text("text", x, y, "color")
+        text = codesters.Text("START OVER", -176, -20, "black")
+        stage.wait(0.5)
+        stage.remove_sprite(text)
+        # add any other actions...
+        
+    dragon.event_collision(collision)
+    def collision(fish, penguin2):
+        fish.hide()
+        penguin2.say("Yay fish!")
+        text2 = codesters.Text("LEVEL COMPLETE", 10, 100, "black")
+        text2.set_size(1.75)
+        # add any other actions...
+        stage.wait(2)
+        stage.set_background("spring")
+        penguin2.hide()
+        guard.hide()
+        dragon.hide()
+        text2.hide()
+        fish = codesters.Sprite("fish", 140, -152)
+        fish.set_size(0.5)
+        bag = codesters.Sprite("plasticbag", -30, -152)
+        penguin10 = codesters.Sprite("penguin", -196, -112)
+        penguin10.set_size(0.75)
+        bag.set_size(1.10)
+        dirt = codesters.Sprite("pollution", -30, 150)
+        dirt.set_size(1.45)
+        def left_key():
+            penguin10.move_left(20)
+            # add other actions...
+            
+        stage.event_key("left", left_key)
+        def right_key():
+            penguin10.move_right(20)
+            # add other actions...
+            
+        stage.event_key("right", right_key)
+        def up_key():
+            penguin10.move_up(20)
+            # add other actions...
+            
+        stage.event_key("up", up_key)
+        def down_key():
+            penguin10.move_down(20)
+            # add other actions...
+            
+        stage.event_key("down", down_key)
+        def collision(bag, penguin10):
+            penguin10.go_to(-196, -112)
+            # sprite = codesters.Text("text", x, y, "color")
+            text = codesters.Text("START OVER", -176, -20, "black")
+            stage.wait(0.5)
+            stage.remove_sprite(text)
+            # add any other actions...
+            
+        bag.event_collision(collision)
+        def collision(dirt, penguin10):
+            penguin10.go_to(-196, -112)
+            # sprite = codesters.Text("text", x, y, "color")
+            text = codesters.Text("START OVER", -176, -20, "black")
+            stage.wait(0.5)
+            stage.remove_sprite(text)
+            # add any other actions...
+            
+        dirt.event_collision(collision)
+        def collision(fish, penguin10):
+            fish.hide()
+            penguin10.say("Yay fish!")
+            text2 = codesters.Text("LEVEL COMPLETE", 10, 60, "black")
+            text2.set_size(1.75)
+            # add any other actions...
+            stage.wait(2)
+            stage.set_background("summer")
+            penguin10.hide()
+            bag.hide()
+            dirt.hide()
+            text2.hide()
+            fish = codesters.Sprite("fish", 140, -152)
+            fish.set_size(0.5)
+            can = codesters.Sprite("sodacan", -30, -152)
+            penguin4 = codesters.Sprite("penguin", -196, -112)
+            penguin4.set_size(0.75)
+            can.set_size(1.0)
+            bird = codesters.Sprite("toucan", -30, 140)
+            bird.set_size(.50)
+            def left_key():
+                penguin4.move_left(20)
+                # add other actions...
+                
+            stage.event_key("left", left_key)
+            def right_key():
+                penguin4.move_right(20)
+                # add other actions...
+                
+            stage.event_key("right", right_key)
+            def up_key():
+                penguin4.move_up(20)
+                # add other actions...
+                
+            stage.event_key("up", up_key)
+            def down_key():
+                penguin4.move_down(20)
+                # add other actions...
+                
+            stage.event_key("down", down_key)
+            def collision(can, penguin4):
+                penguin4.go_to(-196, -112)
+                # sprite = codesters.Text("text", x, y, "color")
+                text = codesters.Text("START OVER", -176, -20, "black")
+                stage.wait(0.5)
+                stage.remove_sprite(text)
+                # add any other actions...
+                
+            can.event_collision(collision)
+            def collision(bird, penguin4):
+                penguin4.go_to(-196, -112)
+                # sprite = codesters.Text("text", x, y, "color")
+                text = codesters.Text("START OVER", -176, -20, "black")
+                stage.wait(0.5)
+                stage.remove_sprite(text)
+                # add any other actions...
+                
+            bird.event_collision(collision)
+            def collision(fish, penguin4):
+                fish.hide()
+                penguin4.say("Yay fish!")
+                text2 = codesters.Text("LEVEL COMPLETE", 10, 200, "black")
+                text2.set_size(1.75)
+                # add any other actions...
+                
+            fish.event_collision(collision)
+        fish.event_collision(collision)
+    fish.event_collision(collision)
+fish.event_collision(collision)
+
+
