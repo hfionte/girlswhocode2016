@@ -1,0 +1,45 @@
+back = codesters.Sprite("Desert_76f")
+tumbleweed = codesters.Sprite("tumbleweed_4e6", 100, -200)
+tumbleweed.dilate(.3)
+tumbleweed.is_hazard()
+penguin = codesters.Sprite("penguin")
+penguin.set_size(0.8)
+penguin.go_to(-200, 0)
+fish = codesters.Sprite("fish")
+fish.go_to(200,0)
+fish.is_goal()
+stage.set_gravity(3)
+stage.enable_all_walls()
+stage.set_bounce(0)
+def left_key():
+    penguin.move_left(40)
+    
+stage.event_key("left", left_key)
+def right_key():
+    penguin.move_right(40)
+    
+stage.event_key("right", right_key)
+def up_key():
+    penguin.move_up(50)
+stage.event_key("up", up_key)
+def collision1(bird, tumblething):
+    #bird = penguin.get_image_name() 
+    #tumblething = tumbleweed.get_image_name()
+    if bird == penguin and tumblething == tumbleweed:
+        bird.go_to(-200, 0)
+        bird.say("Ouch!")
+        stage.wait(2)
+        bird.say(" ")
+        
+
+penguin.event_collision(collision1)
+
+def collision2(fish, thing):
+    if thing == penguin :  
+        penguin.say("Yay fish!")
+        stage.remove_sprite(fish)
+
+fish.event_collision(collision2)
+
+
+
