@@ -1,0 +1,99 @@
+def stage1():
+    back = codesters.Sprite("Desert_76f")
+    tumbleweed = codesters.Sprite("tumbleweed_4e6", 100, -200)
+    tumbleweed.dilate(.3)
+    tumbleweed.is_hazard()
+    penguin1 = codesters.Sprite("penguin")
+    penguin1.set_size(0.8)
+    penguin1.go_to(-200, 0)
+    fish = codesters.Sprite("fish")
+    fish.go_to(200,0)
+    fish.is_goal()
+    stage.set_gravity(5)
+    stage.enable_all_walls()
+    stage.set_bounce(0)
+    
+    def left_key():
+        penguin1.move_left(20)
+    stage.event_key("left", left_key)
+    
+    def right_key():
+        penguin1.move_right(20)
+    stage.event_key("right", right_key)
+    
+    def up_key():
+        penguin1.move_up(20)
+    stage.event_key("up", up_key)
+    
+    def down_key():
+        penguin1.move_down(20)
+    stage.event_key("down", down_key)
+    
+    def collision1(bird, tumblething):
+        #bird = penguin.get_image_name() 
+        #tumblething = tumbleweed.get_image_name()
+        if bird == penguin1 and tumblething == tumbleweed:
+            bird.go_to(-200, 0)
+            bird.say("Ouch!")
+            stage.wait(2)
+            bird.say(" ")
+            
+    
+    penguin1.event_collision(collision1)
+    
+    def collision2(fish, thing):
+        if thing == penguin1:  
+            penguin1.say("Yay fish!")
+            stage.remove_sprite(fish)
+            stage.remove_sprite(tumbleweed)
+            stage.remove_sprite(back)
+            stage.remove_sprite(penguin1)
+            stage2()
+    
+    fish.event_collision(collision2)
+    
+
+def stage2():
+    stage.set_background("winter")
+    penguin2 = codesters.Sprite("penguin")
+    penguin2.set_size(0.8)
+    fish = codesters.Sprite("fish", 100, 100)
+    snowflake = codesters.Sprite("snowflake3", -300, -100)
+    present = codesters.Sprite("present1", 300, -100)
+    
+    penguin2.move_down(120)
+    
+    def left_key():
+        penguin2.move_left(20)
+    stage.event_key("left", left_key)
+    
+    def right_key():
+        penguin2.move_right(20)
+    stage.event_key("right", right_key)
+    
+    def up_key():
+        penguin2.move_up(20)
+    stage.event_key("up", up_key)
+    
+    def down_key():
+        penguin2.move_down(20)
+    stage.event_key("down", down_key)
+    
+    def collisions(penguin2, obstacle):
+        if obstacle == fish:
+            penguin2.say("Yay fish!")
+            stage.remove_sprite(fish)
+        
+        if obstacle == snowflake:
+            penguin2.say("herpaderp")
+            stage.set_background("spring")
+            penguin2.go_to(180, 0)
+        
+        if obstacle == present:
+            penguin2.say("herpaderp")
+            stage.set_background("fall")
+            penguin2.go_to(-180, 0)
+    
+    penguin2.event_collision(collisions)
+
+stage1()
